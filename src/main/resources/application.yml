@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: spark_mongo
+    jmx:
+        enabled: true
+
+server: 
+    port: 8080
+  
+mongo:
+    host: localhost
+    database: admin
+    collectionName: sparktest
+
+spark:
+    masterUri: local
+    inputUriName: spark.mongodb.input.uri
+    outputUriName: spark.mongodb.output.uri  
+    homeDir: 
+  
+  
